@@ -1,0 +1,32 @@
+
+import {Bookmark} from 'lucide-react'
+const Card = (props) => {
+  return (
+    <div className="card">
+        <div className="top">
+          <img src="data:image/png;base64,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" alt="" />
+          <button>Save  <Bookmark/> </button>
+        </div>
+        <div className="center">
+        <h3>{props.company}<span><p>{ props.days} days ago</p></span></h3>
+          <h2>Senior UI/UX Designer</h2>
+          <div className='role'>
+            <h4>{props.tags[0]}</h4>
+            <h4>{props.tags[1]}</h4>
+          </div>
+
+        </div>
+        <div className="bottom">
+        <div> <h3>${props.salary } /hour</h3>
+              <p>California USA</p>
+        </div>
+        <div>
+          <button>Apply Now</button>
+        </div>
+
+        </div>
+      </div>
+  )
+}
+
+export default Card
